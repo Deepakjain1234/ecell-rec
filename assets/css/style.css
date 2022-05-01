@@ -88,7 +88,31 @@ font-family: 'Roboto', sans-serif;
     font-size: 21px;
     /* margin-top: auto; */
     margin-bottom: 21px;
+    border-radius: 34px;
+    border: none;
+    color: white;
 }
+.register-butt button:hover {
+    color: #f19428;
+    background-color: white;
+    padding: 10px 36px;
+    font-size: 21px;
+    /* margin-top: auto; */
+    margin-bottom: 21px;
+    border-radius: 34px;
+    border: 2px solid #f19428;
+    color: #f19428;
+}
+
+.register-butt a
+{
+    color: white;
+}
+.register-butt a:hover
+{
+    color: #f19428;
+}
+
 .right-side
 {
     display: flex;
@@ -108,8 +132,9 @@ font-family: 'Roboto', sans-serif;
     color: white;
     background-color: black;
     font-size: 19px;
-    padding: 5px 58px;
+    padding: 5px 15px;
     margin-top: 48px;
+    border: none;
 }
 
 

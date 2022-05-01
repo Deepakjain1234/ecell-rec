@@ -28,11 +28,12 @@
     width: 443px;
 }
 
-#btn-sub
-{
+#btn-sub {
     margin-top: 12px;
-    
+    border: none;
+    border-radius: 34px;
 }
+
 #btn-sub {
     margin-top: 12px;
     width: 149px;
@@ -109,7 +110,7 @@
 
 .main-sec {
     margin: 0px 0px;
-    height: 116vh;
+    height: 110vh;
 }
 .middle-head h1 {
     font-size: 38px;
