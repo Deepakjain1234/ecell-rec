@@ -1,0 +1,134 @@
+.register-form {
+    background-color: white;
+    position: relative;
+    right: 176px;
+    top: 15px;
+    border: 15px;
+}
+.register-form form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 23px;
+}
+
+.register-form label {
+    /* margin: 6px 0px; */
+    color: #162934;
+    font-size: 19px;
+    margin-top: 9px;
+    margin-bottom: 1px;
+}
+.register-form input {
+    height: 26px;
+    width: 434px;
+}
+.register-form select {
+    height: 29px;
+    width: 443px;
+}
+
+#btn-sub
+{
+    margin-top: 12px;
+    
+}
+#btn-sub {
+    margin-top: 12px;
+    width: 149px;
+    margin: auto;
+    margin-top: 14px;
+    color: white;
+    background-color: #f19428;
+    font-size: 17px;
+    /* padding: 7px 13px; */
+    height: 35px;
+}
+.middle-head h1 {
+    font-size: 90px;
+    color: white;
+    margin: 0px;
+}
+.middle-head h2 {
+    font-size: 90px;
+    color: #f19428;
+    margin: 0px;
+    margin-top: -16px;
+}
+#for-mobile
+{
+    display: none;
+}
+
+@media(max-width:1400px)
+{
+    .register-form {
+        background-color: white;
+        position: relative;
+        right: 176px;
+        top: 3px;
+    }
+}
+@media(max-width:1100px)
+{
+    .middle-head h1 {
+        font-size: 70px;
+        color: white;
+        margin: 0px;
+    }
+    .middle-head h2 {
+        font-size: 70px;
+        color: #f19428;
+        margin: 0px;
+        margin-top: -16px;
+    }
+
+}
+
+@media(max-width:900px)
+
+{
+    .register-form {
+        background-color: white;
+        position: relative;
+        right: 15px;
+        top: 3px;
+    }
+    #for-mobile
+{
+    display: block;
+}
+.register-form input {
+    height: 26px;
+    width: 90%;
+}
+.register-form select {
+    height: 29px;
+    width: 91%;
+}
+
+.main-sec {
+    margin: 0px 0px;
+    height: 116vh;
+}
+.middle-head h1 {
+    font-size: 38px;
+    color: white;
+    margin: 0px;
+}
+.middle-head h2 {
+    font-size: 39px;
+    color: #f19428;
+    margin: 0px;
+    margin-top: 0px;
+    margin-left: 3px;
+}
+.middle-head
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+}

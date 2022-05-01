@@ -1,0 +1,270 @@
+.main-sec
+{
+    margin: 0px 0px;
+    height: 100vh;
+
+}
+body
+{
+    margin: 0px;
+}
+
+.inner-main
+{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 0px;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.mobile-login 
+{
+    display: none;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 100vh; */
+    width: 75%;
+    background-image: linear-gradient(rgb(5 33 48 / 87%) ,rgb(7 30 44 / 71%)),url(/assets/image/back.png);
+    padding-left: 35px;
+}
+
+.logo-head {
+    display: flex;
+    margin-top: -30px;
+}
+
+.logo-head img
+{
+    height: 86px;
+}
+.logo-head h3 {
+    color: white;
+    margin-left: 12px;
+    margin-bottom: 0px;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.logo-head h4 {
+    color: white;
+    margin-left: 12px;
+    margin-top: 4px;
+    color: #f19428;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+.middle-head h1 {
+    font-size: 103px;
+    color: white;
+    margin: 0px;
+}
+.middle-head h2 {
+    font-size: 103px;
+    color: #f19428;
+    margin: 0px;
+    margin-top: -16px;
+}
+
+.middle-head h3 {
+    font-size: 22px;
+    color: white;
+    /* margin: 0px; */
+    /* margin-top: -16px; */
+    font-weight: 400;
+}
+
+.register-butt button {
+    color: white;
+    background-color: #f19428;
+    padding: 10px 36px;
+    font-size: 21px;
+    /* margin-top: auto; */
+    margin-bottom: 21px;
+}
+.right-side
+{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F19428;
+}
+.group-photo {
+    height: 485px;
+    position: relative;
+    right: 237px;
+    top: 135px;
+}
+.login-butt button {
+    color: white;
+    background-color: black;
+    font-size: 19px;
+    padding: 5px 58px;
+    margin-top: 48px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .group-photo {
+        height: 401px;
+        position: relative;
+        right: 237px;
+        top: 135px;
+    }
+    .middle-head h1 {
+        font-size: 94px;
+        color: white;
+        margin: 0px;
+    }
+    .middle-head h2 {
+        font-size: 94px;
+        color: #f19428;
+        margin: 0px;
+        margin-top: -16px;
+    }
+    
+    
+
+  }
+  @media (max-width:1100px) {
+    .group-photo {
+        height: 401px;
+        position: relative;
+        right: 170px;
+        top: 148px;
+    }
+    .middle-head h1 {
+        font-size: 84px;
+        color: white;
+        margin: 0px;
+    }
+    .middle-head h2 {
+        font-size: 84px;
+        color: #f19428;
+        margin: 0px;
+        margin-top: -16px;
+    }
+    .middle-head h3 {
+        font-size: 17px;
+        color: white;
+        /* margin: 0px; */
+        /* margin-top: -16px; */
+        font-weight: 400;
+    }
+      
+  }
+  @media (max-width:900px) {
+    .logo-head img {
+        height: 66px;
+    }
+    .logo-head h3 {
+        color: white;
+        margin-left: 12px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    .logo-head h4 {
+        color: white;
+        margin-left: 12px;
+        margin-top: 4px;
+        color: #f19428;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .group-photo {
+        height: 378px;
+        position: relative;
+        right: 144px;
+        top: 148px;
+    }
+    .middle-head h1 {
+        font-size: 70px;
+        color: white;
+        margin: 0px;
+    }
+
+    .middle-head h2 {
+        font-size: 70px;
+        color: #f19428;
+        margin: 0px;
+        margin-top: -16px;
+    }
+    .register-butt button {
+        color: white;
+        background-color: #f19428;
+        padding: 7px 27px;
+        font-size: 18px;
+        /* margin-top: auto; */
+        margin-bottom: 21px;
+    }
+
+    .login-butt button {
+        color: white;
+        background-color: black;
+        font-size: 19px;
+        padding: 5px 47px;
+        margin-top: 48px;
+    }
+      
+  }
+  @media (max-width:900px)
+  {
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* height: 100vh; */
+        width: 100%;
+        background-image: linear-gradient(rgb(5 33 48 / 87%) ,rgb(7 30 44 / 71%)),url(/assets/image/back.png);
+        padding-left: 35px;
+    }
+
+    .right-side {
+        display: none;
+        width: 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #F19428;
+    }
+    .mobile-login 
+{
+    display:block;
+}
+  }
+
+  @media (max-width:400px)
+  {
+    .middle-head h1 {
+        font-size: 62px;
+        color: white;
+        margin: 0px;
+    }
+    .middle-head h2 {
+        font-size: 62px;
+        color: #f19428;
+        margin: 0px;
+        margin-top: -16px;
+    }
+
+    .middle-head h3 {
+        font-size: 14px;
+        color: white;
+        /* margin: 0px; */
+        /* margin-top: -16px; */
+        font-weight: 400;
+    }
+  }
+
