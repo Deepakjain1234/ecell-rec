@@ -108,7 +108,7 @@ function sendMessage(name, email, contact, scholor, branch, year, vertical1, ver
 
   }
 
-  fetch('http://20.24.196.91:8080', {
+  fetch('20.24.196.91:8080', {
     method: "POST",
     body: JSON.stringify(_data),
     headers: { "Content-type": "application/json; charset=UTF-8" }
