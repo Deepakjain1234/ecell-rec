@@ -21,7 +21,7 @@ var config = {
 
     document
     .getElementById('registrationform2')
-    .addEventListener('submit', formSubmit);  
+    .addEventListener('submit', formSubmit2);  
   
   //Submit form(1.2)
   function formSubmit(e) {
@@ -38,6 +38,33 @@ var config = {
   
     //send message values
     sendMessage(name, email, contact, scholor, branch, year,vertical1,vertical2);
+  
+    //Show Alert Message(5)
+    document.querySelector('.alert').style.display = 'block';
+  
+    //Hide Alert Message After Seven Seconds(6)
+    setTimeout(function() {
+      document.querySelector('.alert').style.display = 'none';
+    }, 7000);
+  
+    //Form Reset After Submission(7)
+    document.getElementById('registrationform').reset();
+  }
+
+  function formSubmit2(e) {
+    e.preventDefault();
+    // Get Values from the DOM
+    let name2 = document.querySelector('#fname2').value;
+    let email2 = document.querySelector('#email12').value;
+    let contact2 = document.querySelector('#contact12').value;
+    let scholor2 = document.querySelector('#scholor2').value;
+    let branch2 = document.querySelector('#branch12').value;
+    let year2 = document.querySelector('#year12').value;
+    let vertical12 = document.querySelector('#vertical12').value;
+    let vertical22 = document.querySelector('#vertical22').value;
+  
+    //send message values
+    sendMessage(name2, email2, contact2, scholor2, branch2, year2,vertical12,vertical22);
   
     //Show Alert Message(5)
     document.querySelector('.alert').style.display = 'block';
