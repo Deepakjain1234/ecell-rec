@@ -1,10 +1,5 @@
-// Import the functions you need from the SDKs you need
-console.log("work");
-alert("qwe")
-
- 
-// Paste the code from Firebase
-const firebaseConfig = {
+// Initialize Firebase(2)
+var config = {
     apiKey: "AIzaSyDfb2QT1AG3-2yqiiUo1mkOn170QRtK92A",
     authDomain: "ecell-1b04d.firebaseapp.com",
     projectId: "ecell-1b04d",
@@ -13,23 +8,64 @@ const firebaseConfig = {
     appId: "1:324153281020:web:0d3d83bdb18d6e0f534a79",
     measurementId: "G-BW02JFHNT6",
     databaseURL:"https://ecell-1b04d-default-rtdb.firebaseio.com/"
-};
- 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
- 
-// Get a reference to the database service
-const db = getDatabase(app);
- 
-document.getElementById('frmContact').addEventListener('submit', function(e) {
+  };
+  firebase.initializeApp(config);
+  
+  //Reference for form collection(3)
+  let formMessage = firebase.database().ref('register');
+  
+  //listen for submit event//(1)
+  document
+    .getElementById('registrationform')
+    .addEventListener('submit', formSubmit);
+  
+  //Submit form(1.2)
+  function formSubmit(e) {
+    alert("call1")
     e.preventDefault();
-    set(ref(db, 'users/' + Math.random().toString(36).slice(2, 7)), {
-        name: document.getElementById('fullname').value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value
+    // Get Values from the DOM
+    let name = document.querySelector('#fname2').value;
+    let email = document.querySelector('#email12').value;
+    let contact = document.querySelector('#contact12').value;
+    let scholor = document.querySelector('#scholor2').value;
+    let branch = document.querySelector('#branch12').value;
+    let year = document.querySelector('#year12').value;
+    let vertical1 = document.querySelector('#vertical12').value;
+    let vertical2 = document.querySelector('#vertical22').value;
+    alert("call2")
+  
+    //send message values
+    sendMessage1(name, email, contact, scholor, branch, year,vertical1,vertical2);
+  
+    //Show Alert Message(5)
+    document.querySelector('.alert').style.display = 'block';
+  
+    //Hide Alert Message After Seven Seconds(6)
+    setTimeout(function() {
+      document.querySelector('.alert').style.display = 'none';
+    }, 7000);
+  
+    //Form Reset After Submission(7)
+    document.getElementById('registrationform').reset();
+  }
+  
+  //Send Message to Firebase(4)
+  
+  function sendMessage1(name, email, contact, scholor, branch, year,vertical1,vertical2) {
+    let newFormMessage = formMessage.push();
+    // alert("submit")
+    newFormMessage.set({
+      name: name,
+      email: email,
+      contact: contact,
+      scholor: scholor,
+      branch: branch,
+      year: year,
+      vertical1:vertical1,
+      vertical2:vertical2,
+      
     });
- 
-    alert('Your form is submitted');
-    document.getElementById('frmContact').reset();
-});
+    alert("your application submited");
+    window.location.href = "index.html";
+    
+  }

@@ -18,6 +18,10 @@ var config = {
   document
     .getElementById('registrationform')
     .addEventListener('submit', formSubmit);
+
+    document
+    .getElementById('registrationform2')
+    .addEventListener('submit', formSubmit);  
   
   //Submit form(1.2)
   function formSubmit(e) {
@@ -51,6 +55,7 @@ var config = {
   
   function sendMessage(name, email, contact, scholor, branch, year,vertical1,vertical2) {
     let newFormMessage = formMessage.push();
+    
     // alert("submit")
     newFormMessage.set({
       name: name,
