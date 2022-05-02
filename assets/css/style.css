@@ -91,6 +91,8 @@ font-family: 'Roboto', sans-serif;
     border-radius: 34px;
     border: none;
     color: white;
+    border: 2px solid #f19428;
+
 }
 .register-butt button:hover {
     color: #f19428;
