@@ -67,7 +67,7 @@ function formSubmit2(e) {
   sendMessage(name2, email2, contact2, scholor2, branch2, year2, vertical12, vertical22);
 
   //Show Alert Message(5)
-  document.querySelector('.alert').style.display = 'block';
+  
 
   //Hide Alert Message After Seven Seconds(6)
   setTimeout(function () {
